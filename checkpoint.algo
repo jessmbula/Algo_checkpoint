@@ -1,0 +1,18 @@
+ALGORITHM setence
+VAR
+c : CHAR:=
+nb_char: INTEGER := 0
+nb_wrd: INTEGER := 1
+nb_voy: INTEGER := 0
+
+BEGIN
+while (c <> ".") do
+read (c)
+nb_char = nb_char +1
+if (c = " ") then
+nb_wrd = nb_wrd +1; end ifif (c in ["o", "a", "y", "u", "i", "e"]) then
+nb_voy = nb_voy +1
+end if 
+end while
+write (nb_char, nb_wrd, nb_voy)
+END
